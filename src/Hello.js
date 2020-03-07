@@ -3,12 +3,13 @@ import "./Hello.css";
 
 /*class HelloWorld extends Component {
   render() {
-    return <div className="helloTitle">Hellow World!!</div>;
+    return <div className="helloTitle">Hellow {this.props.name}!!</div>;
   }
-}*/
+}
+*/
 
-const HelloWorld = () => {
-  return <div className="helloTitle">Hellow World!!</div>;
+const HelloWorld = props => {
+  return <div className="helloTitle">Hellow {props.name}!!</div>;
 };
 
 export default HelloWorld;

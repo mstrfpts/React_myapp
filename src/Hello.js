@@ -7,6 +7,9 @@ class HelloWorld extends Component {
     this.state = { greeting: "Hello" };
   }
 
+  //binding in function using arrow function
+  //if we wrote frenchify() , we would have to bind at render using
+  //onClick={this.frenchify.bind(this)}
   frenchify = () => {
     this.setState({ greeting: "Bonjour" });
   };
